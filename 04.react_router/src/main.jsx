@@ -6,7 +6,7 @@ import { BrowserRouter } from 'react-router-dom'
 // BrowserRouter : Router 기능 사용하게끔 허용
 
 createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
+  // <BrowserRouter>
     <App />
-  </BrowserRouter>,
+  // </BrowserRouter>,
 )

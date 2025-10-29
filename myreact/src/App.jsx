@@ -5,17 +5,19 @@ import './App.css'
 import Login from './component/Login'
 import Join from './component/Join'
 import Home from './component/Home'
-import {Route, Routes} from 'react-router-dom'
+import {Route, Routes,BrowserRouter} from 'react-router-dom'
 
 function App() {
 
   return (
     <>
-      <Routes>
-        <Route path='/' element={<Home></Home>}></Route>
-        <Route path='/login' element={<Login></Login>}></Route>
-        <Route path='/join' element={<Join></Join>}></Route> 
-      </Routes>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Home></Home>}></Route>
+          <Route path='/login' element={<Login></Login>}></Route>
+          <Route path='/join' element={<Join></Join>}></Route> 
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
